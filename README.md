@@ -1,161 +1,244 @@
 # 🚀 Evercito
 
-Bienvenido al repositorio oficial de **Evercito**, un proyecto creado con el objetivo de aprender, practicar y mejorar habilidades en programación, desarrollo de software y manejo de bases de datos.
+Bienvenido a **Evercito**, un proyecto enfocado en el aprendizaje y desarrollo de software utilizando tecnologías modernas de programación y diseño web.
 
-Este proyecto reúne diferentes tecnologías modernas utilizadas en el desarrollo de aplicaciones, permitiendo comprender desde la lógica de programación hasta la creación de interfaces gráficas y conexiones con bases de datos.
+Este repositorio tiene como objetivo mostrar el uso de distintos lenguajes de programación y tecnologías utilizadas en el desarrollo de aplicaciones y páginas web.
 
 ---
 
 # 📖 Descripción del Proyecto
 
-Evercito es un proyecto educativo y práctico orientado al desarrollo de aplicaciones utilizando diferentes lenguajes y herramientas tecnológicas.
+Evercito es un proyecto educativo donde se practican conocimientos relacionados con:
 
-Aquí se trabajan temas como:
+- Programación
+- Diseño web
+- Bases de datos
+- Interfaces gráficas
+- Desarrollo Frontend y Backend
+- Control de versiones
 
-- Programación orientada a objetos
-- Creación de interfaces gráficas
-- Gestión de bases de datos
-- Uso de tablas y formularios
-- Conexiones entre aplicaciones y MySQL
-- Control de versiones con GitHub
-
-El objetivo principal es fortalecer conocimientos en desarrollo de software mientras se aplican buenas prácticas de programación.
+El proyecto permite mejorar habilidades en distintos lenguajes utilizados actualmente en el mundo del desarrollo de software.
 
 ---
 
-# 🛠️ Tecnologías y Lenguajes Utilizados
+# 🌐 Lenguajes y Tecnologías Utilizadas
+
+---
+
+# 🟧 HTML5
+
+HTML5 es el lenguaje estándar utilizado para crear la estructura de las páginas web.
+
+Con HTML5 se pueden crear:
+
+- Títulos
+- Formularios
+- Tablas
+- Botones
+- Imágenes
+- Videos
+- Estructura de páginas completas
+
+## Características de HTML5
+
+- Fácil de aprender
+- Compatible con navegadores modernos
+- Permite contenido multimedia
+- Base principal de toda página web
+
+## Ejemplo
+
+```html
+<h1>Hola Mundo</h1>
+<p>Bienvenido a mi proyecto</p>
+```
+
+🔗 Página Oficial:  
+https://developer.mozilla.org/es/docs/Web/HTML
+
+---
+
+# 🎨 CSS3
+
+CSS3 es el lenguaje utilizado para diseñar y dar estilo a las páginas web.
+
+Con CSS3 se puede:
+
+- Cambiar colores
+- Agregar animaciones
+- Diseñar botones
+- Crear diseños responsivos
+- Mejorar la apariencia visual
+
+## Características de CSS3
+
+- Diseños modernos
+- Animaciones visuales
+- Adaptable a móviles
+- Separación entre diseño y estructura
+
+## Ejemplo
+
+```css
+body{
+    background-color: black;
+    color: white;
+}
+```
+
+🔗 Página Oficial:  
+https://developer.mozilla.org/es/docs/Web/CSS
+
+---
+
+# ⚡ JavaScript
+
+JavaScript es el lenguaje que permite agregar interactividad y funcionalidades dinámicas a las páginas web.
+
+Con JavaScript se puede:
+
+- Validar formularios
+- Crear animaciones
+- Manipular elementos HTML
+- Crear aplicaciones web
+- Mostrar mensajes dinámicos
+
+## Características de JavaScript
+
+- Lenguaje dinámico
+- Compatible con todos los navegadores
+- Muy utilizado en desarrollo web
+- Permite interacción en tiempo real
+
+## Ejemplo
+
+```javascript
+alert("Bienvenido al sistema");
+```
+
+🔗 Página Oficial:  
+https://developer.mozilla.org/es/docs/Web/JavaScript
 
 ---
 
 # ☕ Java
 
-Java es un lenguaje de programación orientado a objetos ampliamente utilizado para desarrollar aplicaciones de escritorio, móviles, web y empresariales.
+Java es un lenguaje de programación orientado a objetos muy utilizado en aplicaciones de escritorio, web y móviles.
 
-En este proyecto se utiliza Java para:
+En este proyecto Java se utiliza para:
 
-- Crear la lógica del sistema
-- Manejar eventos y procesos
-- Construir interfaces gráficas
-- Conectar con bases de datos
+- Crear lógica del sistema
+- Manejar procesos
+- Desarrollar interfaces gráficas
+- Conectar bases de datos
 
 ## Características de Java
 
-- Multiplataforma
 - Seguro y robusto
+- Multiplataforma
 - Orientado a objetos
-- Gran comunidad de desarrolladores
+- Muy utilizado en empresas
+
+## Ejemplo
+
+```java
+public class Hola{
+    public static void main(String[] args){
+        System.out.println("Hola Mundo");
+    }
+}
+```
 
 🔗 Página Oficial:  
 https://www.java.com/es/
 
 ---
 
-# 🖥️ Apache NetBeans
+# 🗄️ SQL
 
-Apache NetBeans es un entorno de desarrollo integrado (IDE) utilizado para programar aplicaciones en Java y otros lenguajes.
+SQL es el lenguaje utilizado para gestionar bases de datos.
 
-En este proyecto se usa para:
+Con SQL se puede:
 
-- Diseñar formularios JFrame
-- Programar aplicaciones Java
-- Administrar proyectos
-- Ejecutar y depurar código
+- Crear tablas
+- Insertar datos
+- Buscar información
+- Modificar registros
+- Relacionar tablas
 
-## Ventajas de NetBeans
+## Características de SQL
 
-- Fácil de usar
-- Editor visual
-- Compatible con múltiples lenguajes
-- Ideal para estudiantes y profesionales
-
-🔗 Página Oficial:  
-https://netbeans.apache.org/
-
----
-
-# 🗄️ MySQL
-
-MySQL es un sistema de gestión de bases de datos relacional utilizado para almacenar información de manera organizada.
-
-En este proyecto se utiliza para:
-
-- Guardar datos de usuarios
-- Administrar productos y ventas
-- Crear relaciones entre tablas
-- Realizar consultas SQL
-
-## Características de MySQL
-
-- Rápido y seguro
-- Fácil de administrar
-- Compatible con muchas aplicaciones
+- Fácil de aprender
 - Muy utilizado en empresas
+- Compatible con diferentes motores de bases de datos
+
+## Ejemplo
+
+```sql
+SELECT * FROM usuarios;
+```
 
 🔗 Página Oficial:  
-https://www.mysql.com/
+https://developer.mozilla.org/es/docs/Glossary/SQL
 
 ---
 
-# 🌐 GitHub
+# 🐘 PHP
 
-GitHub es una plataforma de desarrollo colaborativo basada en Git.
+PHP es un lenguaje de programación utilizado para desarrollar páginas web dinámicas y aplicaciones del lado del servidor.
+
+Con PHP se puede:
+
+- Conectar bases de datos
+- Procesar formularios
+- Crear sistemas web
+- Gestionar usuarios
+
+## Características de PHP
+
+- Fácil de integrar con HTML
+- Muy utilizado en páginas web
+- Compatible con MySQL
+
+## Ejemplo
+
+```php
+<?php
+echo "Hola Mundo";
+?>
+```
+
+🔗 Página Oficial:  
+https://www.php.net/
+
+---
+
+# 🐍 Python
+
+Python es un lenguaje de programación muy popular por su simplicidad y potencia.
 
 Se utiliza para:
 
-- Guardar el código del proyecto
-- Controlar versiones
-- Compartir proyectos
-- Trabajar en equipo
+- Desarrollo web
+- Inteligencia artificial
+- Automatización
+- Ciencia de datos
 
-## Ventajas de GitHub
+## Características de Python
 
-- Almacenamiento en la nube
-- Historial de cambios
-- Trabajo colaborativo
-- Integración con Git
+- Fácil de aprender
+- Código limpio
+- Gran comunidad
+- Multiplataforma
 
-🔗 Página Oficial:  
-https://github.com/
+## Ejemplo
 
----
-
-# 🔧 Git
-
-Git es un sistema de control de versiones que permite registrar cambios en archivos y proyectos.
-
-Gracias a Git es posible:
-
-- Recuperar versiones anteriores
-- Trabajar en ramas
-- Colaborar con otros desarrolladores
-- Mantener un historial del proyecto
+```python
+print("Hola Mundo")
+```
 
 🔗 Página Oficial:  
-https://git-scm.com/
-
----
-
-# 🎨 JFrame
-
-JFrame es una clase de Java Swing utilizada para crear ventanas e interfaces gráficas.
-
-En este proyecto se utiliza para:
-
-- Crear formularios
-- Mostrar tablas
-- Agregar botones y campos de texto
-- Diseñar interfaces amigables
-
-## Componentes Utilizados
-
-- JButton
-- JTable
-- JTextField
-- JLabel
-- JPanel
-
-🔗 Documentación Oficial:  
-https://docs.oracle.com/javase/tutorial/uiswing/
+https://www.python.org/
 
 ---
 
@@ -164,101 +247,50 @@ https://docs.oracle.com/javase/tutorial/uiswing/
 ```bash
 Evercito/
 │
-├── src/
-│   ├── formularios/
-│   ├── clases/
-│   ├── conexiones/
-│
-├── database/
-│   ├── tablas.sql
-│
+├── index.html
+├── style.css
+├── script.js
+├── database.sql
 ├── README.md
 │
-└── assets/
-    ├── imagenes/
+├── assets/
+│   ├── imagenes/
+│   └── iconos/
 ```
 
 ---
 
 # ⚙️ Funcionalidades del Proyecto
 
-✅ Registro de datos  
-✅ Manejo de tablas  
-✅ Formularios gráficos  
-✅ Conexión con MySQL  
-✅ Gestión de ventas  
-✅ Gestión de productos  
-✅ Control de usuarios  
-✅ Interfaz amigable  
-
----
-
-# ▶️ Cómo Ejecutar el Proyecto
-
-## 1️⃣ Clonar el repositorio
-
-```bash
-git clone https://github.com/usuario/Evercito.git
-```
-
----
-
-## 2️⃣ Abrir en Apache NetBeans
-
-- Abrir NetBeans
-- Seleccionar "Abrir Proyecto"
-- Elegir la carpeta del proyecto
-
----
-
-## 3️⃣ Configurar Base de Datos
-
-- Crear la base de datos en MySQL
-- Importar el archivo SQL
-- Configurar usuario y contraseña
-
----
-
-## 4️⃣ Ejecutar el Proyecto
-
-Presionar el botón:
-
-```bash
-Run Project
-```
-
-o la tecla:
-
-```bash
-F6
-```
-
----
-
-# 📸 Capturas del Proyecto
-
-Aquí puedes agregar imágenes de:
-
-- Formularios
-- Tablas
-- Base de datos
-- Ventanas del sistema
-
-Ejemplo:
-
-```md
-![Vista del sistema](assets/imagenes/sistema.png)
-```
+✅ Diseño web moderno  
+✅ Formularios interactivos  
+✅ Conexión con bases de datos  
+✅ Validaciones con JavaScript  
+✅ Interfaz responsiva  
+✅ Organización de archivos  
+✅ Uso de múltiples tecnologías  
 
 ---
 
 # 🎯 Objetivos del Proyecto
 
-- Aprender programación orientada a objetos
-- Mejorar habilidades en Java
-- Practicar bases de datos
-- Aprender Git y GitHub
-- Crear aplicaciones funcionales
+- Aprender desarrollo web
+- Mejorar habilidades de programación
+- Practicar diseño frontend
+- Comprender bases de datos
+- Crear proyectos funcionales
+
+---
+
+# 📸 Capturas del Proyecto
+
+Aquí puedes agregar imágenes de tu sistema o página web.
+
+Ejemplo:
+
+```md
+![Inicio](assets/imagenes/inicio.png)
+```
 
 ---
 
@@ -266,30 +298,36 @@ Ejemplo:
 
 ## Antonio Mendez
 
-Estudiante y desarrollador en formación apasionado por la programación, las bases de datos y el desarrollo de aplicaciones.
+Desarrollador en formación apasionado por la programación y el desarrollo web.
 
 ---
 
 # 📚 Recursos de Aprendizaje
 
+## HTML5
+https://developer.mozilla.org/es/docs/Web/HTML
+
+## CSS3
+https://developer.mozilla.org/es/docs/Web/CSS
+
+## JavaScript
+https://developer.mozilla.org/es/docs/Web/JavaScript
+
 ## Java
-https://www.w3schools.com/java/
+https://www.java.com/es/
 
-## MySQL
-https://www.w3schools.com/mysql/
+## PHP
+https://www.php.net/
 
-## GitHub
-https://docs.github.com/es
-
-## Git
-https://git-scm.com/doc
+## Python
+https://www.python.org/
 
 ---
 
 # ⭐ Gracias por visitar este proyecto
 
-Si te gusta este repositorio puedes darle una ⭐ en GitHub para apoyar el proyecto.
+Si te gusta este repositorio puedes darle una ⭐ en GitHub.
 
 ---
 
-# 🚀 “La programación no solo crea aplicaciones, también crea oportunidades.”
+# 🚀 “El aprendizaje constante es la clave del éxito en la programación.”
