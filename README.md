@@ -149,7 +149,7 @@ Si te gusta este repositorio puedes darle una ⭐ en GitHub.
 
 <div align="center">
 
-# 💙 Gracias por visitar Evercito
+# 💙 Gracias por visitar mi perfil
 
 ### “El aprendizaje constante es la clave del éxito.”
 
