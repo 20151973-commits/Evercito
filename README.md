@@ -1,333 +1,269 @@
-# 🚀 Evercito
 
-Bienvenido a **Evercito**, un proyecto enfocado en el aprendizaje y desarrollo de software utilizando tecnologías modernas de programación y diseño web.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evercito</title>
 
-Este repositorio tiene como objetivo mostrar el uso de distintos lenguajes de programación y tecnologías utilizadas en el desarrollo de aplicaciones y páginas web.
+<style>
 
----
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-# 📖 Descripción del Proyecto
-
-Evercito es un proyecto educativo donde se practican conocimientos relacionados con:
-
-- Programación
-- Diseño web
-- Bases de datos
-- Interfaces gráficas
-- Desarrollo Frontend y Backend
-- Control de versiones
-
-El proyecto permite mejorar habilidades en distintos lenguajes utilizados actualmente en el mundo del desarrollo de software.
-
----
-
-# 🌐 Lenguajes y Tecnologías Utilizadas
-
----
-
-# 🟧 HTML5
-
-HTML5 es el lenguaje estándar utilizado para crear la estructura de las páginas web.
-
-Con HTML5 se pueden crear:
-
-- Títulos
-- Formularios
-- Tablas
-- Botones
-- Imágenes
-- Videos
-- Estructura de páginas completas
-
-## Características de HTML5
-
-- Fácil de aprender
-- Compatible con navegadores modernos
-- Permite contenido multimedia
-- Base principal de toda página web
-
-## Ejemplo
-
-```html
-<h1>Hola Mundo</h1>
-<p>Bienvenido a mi proyecto</p>
-```
-
-🔗 Página Oficial:  
-https://developer.mozilla.org/es/docs/Web/HTML
-
----
-
-# 🎨 CSS3
-
-CSS3 es el lenguaje utilizado para diseñar y dar estilo a las páginas web.
-
-Con CSS3 se puede:
-
-- Cambiar colores
-- Agregar animaciones
-- Diseñar botones
-- Crear diseños responsivos
-- Mejorar la apariencia visual
-
-## Características de CSS3
-
-- Diseños modernos
-- Animaciones visuales
-- Adaptable a móviles
-- Separación entre diseño y estructura
-
-## Ejemplo
-
-```css
 body{
-    background-color: black;
-    color: white;
+    background: linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:white;
 }
-```
 
-🔗 Página Oficial:  
-https://developer.mozilla.org/es/docs/Web/CSS
+/* HEADER */
 
----
-
-# ⚡ JavaScript
-
-JavaScript es el lenguaje que permite agregar interactividad y funcionalidades dinámicas a las páginas web.
-
-Con JavaScript se puede:
-
-- Validar formularios
-- Crear animaciones
-- Manipular elementos HTML
-- Crear aplicaciones web
-- Mostrar mensajes dinámicos
-
-## Características de JavaScript
-
-- Lenguaje dinámico
-- Compatible con todos los navegadores
-- Muy utilizado en desarrollo web
-- Permite interacción en tiempo real
-
-## Ejemplo
-
-```javascript
-alert("Bienvenido al sistema");
-```
-
-🔗 Página Oficial:  
-https://developer.mozilla.org/es/docs/Web/JavaScript
-
----
-
-# ☕ Java
-
-Java es un lenguaje de programación orientado a objetos muy utilizado en aplicaciones de escritorio, web y móviles.
-
-En este proyecto Java se utiliza para:
-
-- Crear lógica del sistema
-- Manejar procesos
-- Desarrollar interfaces gráficas
-- Conectar bases de datos
-
-## Características de Java
-
-- Seguro y robusto
-- Multiplataforma
-- Orientado a objetos
-- Muy utilizado en empresas
-
-## Ejemplo
-
-```java
-public class Hola{
-    public static void main(String[] args){
-        System.out.println("Hola Mundo");
-    }
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4');
+    background-size:cover;
+    background-position:center;
+    position:relative;
 }
-```
 
-🔗 Página Oficial:  
-https://www.java.com/es/
+header::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
 
----
+.header-content{
+    position:relative;
+    z-index:1;
+}
 
-# 🗄️ SQL
+header h1{
+    font-size:70px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
 
-SQL es el lenguaje utilizado para gestionar bases de datos.
+header p{
+    font-size:22px;
+    width:70%;
+    margin:auto;
+    line-height:1.6;
+}
 
-Con SQL se puede:
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:bold;
+}
 
-- Crear tablas
-- Insertar datos
-- Buscar información
-- Modificar registros
-- Relacionar tablas
+.btn:hover{
+    background:#0ea5e9;
+    transform:scale(1.05);
+}
 
-## Características de SQL
+/* TECNOLOGIAS */
 
-- Fácil de aprender
-- Muy utilizado en empresas
-- Compatible con diferentes motores de bases de datos
+.section{
+    padding:80px 10%;
+}
 
-## Ejemplo
+.section h2{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
 
-```sql
-SELECT * FROM usuarios;
-```
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
 
-🔗 Página Oficial:  
-https://developer.mozilla.org/es/docs/Glossary/SQL
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
 
----
+.card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
 
-# 🐘 PHP
+.card img{
+    width:80px;
+    margin-bottom:20px;
+}
 
-PHP es un lenguaje de programación utilizado para desarrollar páginas web dinámicas y aplicaciones del lado del servidor.
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
 
-Con PHP se puede:
+.card p{
+    line-height:1.6;
+}
 
-- Conectar bases de datos
-- Procesar formularios
-- Crear sistemas web
-- Gestionar usuarios
+/* FOOTER */
 
-## Características de PHP
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    margin-top:40px;
+}
 
-- Fácil de integrar con HTML
-- Muy utilizado en páginas web
-- Compatible con MySQL
+footer p{
+    color:#94a3b8;
+}
 
-## Ejemplo
+</style>
+</head>
+<body>
 
-```php
-<?php
-echo "Hola Mundo";
-?>
-```
+<header>
 
-🔗 Página Oficial:  
-https://www.php.net/
+<div class="header-content">
 
----
+<h1>🚀 Evercito</h1>
 
-# 🐍 Python
+<p>
+Proyecto educativo enfocado en el aprendizaje y desarrollo
+de software utilizando tecnologías modernas de programación,
+bases de datos y diseño web.
+</p>
 
-Python es un lenguaje de programación muy popular por su simplicidad y potencia.
+<a href="#" class="btn">Explorar Proyecto</a>
 
-Se utiliza para:
+</div>
 
-- Desarrollo web
-- Inteligencia artificial
-- Automatización
-- Ciencia de datos
+</header>
 
-## Características de Python
+<section class="section">
 
-- Fácil de aprender
-- Código limpio
-- Gran comunidad
-- Multiplataforma
+<h2>🌐 Tecnologías Utilizadas</h2>
 
-## Ejemplo
+<div class="cards">
 
-```python
-print("Hola Mundo")
-```
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+<h3>HTML5</h3>
+<p>
+Lenguaje utilizado para crear la estructura de páginas web.
+</p>
+</div>
 
-🔗 Página Oficial:  
-https://www.python.org/
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+<h3>CSS3</h3>
+<p>
+Permite agregar estilos, colores y diseños modernos.
+</p>
+</div>
 
----
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+<h3>JavaScript</h3>
+<p>
+Agrega interactividad y funcionalidades dinámicas.
+</p>
+</div>
 
-# 📂 Estructura del Proyecto
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+<h3>Java</h3>
+<p>
+Lenguaje robusto utilizado para aplicaciones y sistemas.
+</p>
+</div>
 
-```bash
-Evercito/
-│
-├── index.html
-├── style.css
-├── script.js
-├── database.sql
-├── README.md
-│
-├── assets/
-│   ├── imagenes/
-│   └── iconos/
-```
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png">
+<h3>SQL</h3>
+<p>
+Permite gestionar y manipular bases de datos.
+</p>
+</div>
 
----
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png">
+<h3>PHP</h3>
+<p>
+Desarrollo web dinámico y conexión con servidores.
+</p>
+</div>
 
-# ⚙️ Funcionalidades del Proyecto
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+<h3>Python</h3>
+<p>
+Lenguaje potente utilizado en IA, automatización y desarrollo.
+</p>
+</div>
 
-✅ Diseño web moderno  
-✅ Formularios interactivos  
-✅ Conexión con bases de datos  
-✅ Validaciones con JavaScript  
-✅ Interfaz responsiva  
-✅ Organización de archivos  
-✅ Uso de múltiples tecnologías  
+</div>
 
----
+</section>
 
-# 🎯 Objetivos del Proyecto
+<section class="section">
 
-- Aprender desarrollo web
-- Mejorar habilidades de programación
-- Practicar diseño frontend
-- Comprender bases de datos
-- Crear proyectos funcionales
+<h2>🎯 Objetivos del Proyecto</h2>
 
----
+<div class="cards">
 
-# 📸 Capturas del Proyecto
+<div class="card">
+<h3>📚 Aprendizaje</h3>
+<p>
+Mejorar habilidades de programación y desarrollo web.
+</p>
+</div>
 
-Aquí puedes agregar imágenes de tu sistema o página web.
+<div class="card">
+<h3>💻 Frontend</h3>
+<p>
+Practicar diseño moderno e interfaces responsivas.
+</p>
+</div>
 
-Ejemplo:
+<div class="card">
+<h3>🗄️ Backend</h3>
+<p>
+Comprender lógica del sistema y bases de datos.
+</p>
+</div>
 
-```md
-![Inicio](assets/imagenes/inicio.png)
-```
+</div>
 
----
+</section>
 
-# 👨‍💻 Autor
+<footer>
 
-## Antonio Mendez
+<p>
+⭐ Gracias por visitar Evercito — Antonio Mendez
+</p>
 
-Desarrollador en formación apasionado por la programación y el desarrollo web.
+</footer>
 
----
-
-# 📚 Recursos de Aprendizaje
-
-## HTML5
-https://developer.mozilla.org/es/docs/Web/HTML
-
-## CSS3
-https://developer.mozilla.org/es/docs/Web/CSS
-
-## JavaScript
-https://developer.mozilla.org/es/docs/Web/JavaScript
-
-## Java
-https://www.java.com/es/
-
-## PHP
-https://www.php.net/
-
-## Python
-https://www.python.org/
-
----
-
-# ⭐ Gracias por visitar este proyecto
-
-Si te gusta este repositorio puedes darle una ⭐ en GitHub.
-
----
-
-# 🚀 “El aprendizaje constante es la clave del éxito en la programación.”
+</body>
+</html>
