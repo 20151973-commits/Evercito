@@ -1,34 +1,30 @@
-
-<div align="center">
-
-<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" width="180">
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Evercito</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diseño Futurista</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     height:100vh;
     overflow:hidden;
-    background: linear-gradient(135deg,#020617,#0f172a,#1e293b);
     display:flex;
     justify-content:center;
     align-items:center;
+    background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
     position:relative;
 }
 
 /* Fondo animado */
+
 body::before{
     content:"";
     position:absolute;
@@ -39,11 +35,11 @@ body::before{
     radial-gradient(circle,#9333ea 2px, transparent 2px),
     radial-gradient(circle,#22c55e 2px, transparent 2px);
     background-size:120px 120px;
-    animation:mover 15s linear infinite;
-    opacity:0.3;
+    animation:fondo 15s linear infinite;
+    opacity:0.25;
 }
 
-@keyframes mover{
+@keyframes fondo{
     0%{
         transform:translate(0,0);
     }
@@ -52,127 +48,106 @@ body::before{
     }
 }
 
-/* Contenedor */
-.container{
-    position:relative;
-    z-index:10;
-    text-align:center;
-    padding:50px;
-    border-radius:25px;
+/* Caja central */
+
+.box{
+    width:450px;
+    height:250px;
+    border-radius:30px;
     background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(12px);
+    position:relative;
+
     box-shadow:
     0 0 20px #38bdf8,
     0 0 40px #9333ea,
-    0 0 60px #22c55e;
-    animation:flotar 3s ease-in-out infinite;
+    0 0 70px #22c55e;
+
+    animation:flotar 4s ease-in-out infinite;
 }
 
 @keyframes flotar{
     0%,100%{
         transform:translateY(0px);
     }
+
     50%{
-        transform:translateY(-10px);
+        transform:translateY(-12px);
     }
 }
 
-/* Titulo */
-h1{
-    font-size:65px;
-    color:white;
-    text-transform:uppercase;
-    letter-spacing:4px;
-    text-shadow:
-    0 0 10px #38bdf8,
-    0 0 20px #38bdf8,
-    0 0 40px #9333ea,
-    0 0 60px #22c55e;
-    animation:brillo 2s infinite alternate;
-}
+/* Luces */
 
-@keyframes brillo{
-    from{
-        filter:brightness(1);
-    }
-    to{
-        filter:brightness(1.5);
-    }
-}
-
-/* Texto */
-p{
-    margin-top:20px;
-    color:#e2e8f0;
-    font-size:20px;
-    letter-spacing:1px;
-}
-
-/* Boton */
-button{
-    margin-top:30px;
-    padding:15px 40px;
-    border:none;
-    border-radius:50px;
-    background:linear-gradient(45deg,#38bdf8,#9333ea,#22c55e);
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-    transition:0.4s;
-    box-shadow:0 0 20px #38bdf8;
-}
-
-button:hover{
-    transform:scale(1.1);
-    box-shadow:
-    0 0 20px #38bdf8,
-    0 0 40px #9333ea,
-    0 0 60px #22c55e;
-}
-
-/* Luces flotantes */
-.luz{
+.light{
     position:absolute;
     border-radius:50%;
-    filter:blur(15px);
-    animation:subir 10s linear infinite;
+    filter:blur(20px);
+    animation:mover 10s linear infinite alternate;
 }
 
-.luz:nth-child(1){
+.light1{
+    width:180px;
+    height:180px;
+    background:#38bdf8;
+    top:-50px;
+    left:-60px;
+}
+
+.light2{
+    width:200px;
+    height:200px;
+    background:#9333ea;
+    bottom:-60px;
+    right:-60px;
+}
+
+.light3{
     width:120px;
     height:120px;
-    background:#38bdf8;
-    left:10%;
-    animation-duration:8s;
-}
-
-.luz:nth-child(2){
-    width:150px;
-    height:150px;
-    background:#9333ea;
-    right:10%;
-    animation-duration:12s;
-}
-
-.luz:nth-child(3){
-    width:100px;
-    height:100px;
     background:#22c55e;
-    bottom:10%;
-    animation-duration:10s;
+    top:40%;
+    left:40%;
 }
 
-@keyframes subir{
-    0%{
+@keyframes mover{
+    from{
         transform:translateY(0px);
-        opacity:0.5;
     }
-    50%{
-        opacity:1;
+
+    to{
+        transform:translateY(-40px);
     }
+}
+
+/* Lineas decorativas */
+
+.line{
+    position:absolute;
+    background:linear-gradient(90deg,transparent,#38bdf8,transparent);
+    height:2px;
+    width:100%;
+    animation:linea 3s linear infinite;
+}
+
+.line1{
+    top:20%;
+}
+
+.line2{
+    top:50%;
+}
+
+.line3{
+    top:80%;
+}
+
+@keyframes linea{
+    0%{
+        transform:translateX(-100%);
+    }
+
     100%{
-        transform:translateY(-80px);
-        opacity:0.5;
+        transform:translateX(100%);
     }
 }
 
@@ -181,21 +156,19 @@ button:hover{
 
 <body>
 
-<div class="luz"></div>
-<div class="luz"></div>
-<div class="luz"></div>
+<div class="light light1"></div>
+<div class="light light2"></div>
+<div class="light light3"></div>
 
-<div class="container">
-    <h1>🚀 Bienvenidos <br> les saluda Evercito</h1>
-    
-    <p>
-        Desarrollo • Diseño • Creatividad • Tecnología
-    </p>
-
-    <button>Entrar Ahora</button>
+<div class="box">
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
 </div>
 
 </body>
+</html>
+
 </html>
 
 ### 💻 Proyecto de Desarrollo Web y Programación
