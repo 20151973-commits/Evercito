@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diseño Futurista</title>
 
 <style>
 
@@ -34,21 +33,25 @@ body::before{
     radial-gradient(circle,#38bdf8 2px, transparent 2px),
     radial-gradient(circle,#9333ea 2px, transparent 2px),
     radial-gradient(circle,#22c55e 2px, transparent 2px);
+
     background-size:120px 120px;
     animation:fondo 15s linear infinite;
     opacity:0.25;
 }
 
 @keyframes fondo{
+
     0%{
         transform:translate(0,0);
     }
+
     100%{
         transform:translate(-120px,-120px);
     }
+
 }
 
-/* Caja central */
+/* Caja principal */
 
 .box{
     width:450px;
@@ -67,6 +70,7 @@ body::before{
 }
 
 @keyframes flotar{
+
     0%,100%{
         transform:translateY(0px);
     }
@@ -74,6 +78,7 @@ body::before{
     50%{
         transform:translateY(-12px);
     }
+
 }
 
 /* Luces */
@@ -110,6 +115,7 @@ body::before{
 }
 
 @keyframes mover{
+
     from{
         transform:translateY(0px);
     }
@@ -117,9 +123,10 @@ body::before{
     to{
         transform:translateY(-40px);
     }
+
 }
 
-/* Lineas decorativas */
+/* Líneas decorativas */
 
 .line{
     position:absolute;
@@ -142,6 +149,7 @@ body::before{
 }
 
 @keyframes linea{
+
     0%{
         transform:translateX(-100%);
     }
@@ -149,6 +157,7 @@ body::before{
     100%{
         transform:translateX(100%);
     }
+
 }
 
 </style>
